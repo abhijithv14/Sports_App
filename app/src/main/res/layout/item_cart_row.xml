@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/black"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/image_view_product"
+        android:layout_width="82dp"
+        android:layout_height="104dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Product Image"
+        android:scaleType="centerCrop" />
+
+
+
+    <LinearLayout
+        android:layout_width="145dp"
+        android:layout_height="95dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_view_product_name"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/text_view_quantity"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 1" />
+
+
+        <TextView
+            android:id="@+id/text_view_total_price"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price: ₹500" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/button_place_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:text="Place Order"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/button_cancel_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#F41E34"
+            android:text="Remove Item"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
